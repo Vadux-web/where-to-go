@@ -1,0 +1,8 @@
+.intro__caption {
+  font-family: 'FiraMono';
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #fecda7;
+  margin: 146px 0 28px;
+}
