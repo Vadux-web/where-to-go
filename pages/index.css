@@ -19,7 +19,7 @@
 
 /* Подключаем блок title и его компоненты */
 
-@import url(../blocks/title.css);
+@import url(../blocks/title/title.css);
 
 /* Импортируем блок video и его компоненты */
 
@@ -31,5 +31,5 @@
 
 /* Подключаем блок final и его компоненты */
 
-@import url(../blocks/final.css);
-@import url(../blocks/final__text.css);
+@import url(../blocks/final/final.css);
+@import url(../blocks/final/__text/final__text.css);
