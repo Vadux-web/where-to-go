@@ -10,6 +10,14 @@
 
 @import url(../blocks/title.css);
 
+/* Импортируем блок video и его компоненты */
+
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__text/video__text.css);
+@import url(../blocks/video/__file/video__file.css);
+@import url(../blocks/video/__button-wrapper/video__button-wrapper.css);
+@import url(../blocks/video/__button/video__button.css);
+
 /* Подключаем блок final и его компоненты */
 
 @import url(../blocks/final.css);
