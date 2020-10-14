@@ -1,3 +1,16 @@
+/* Подключаем normalize.css */
+
 @import url(../vendor/normalize.css);
+
+/* Подключаем шрифты */
+
 @import url(../fonts/font.css);
+
+/* Подключаем блок title и его компоненты */
+
 @import url(../blocks/title.css);
+
+/* Подключаем блок final и его компоненты */
+
+@import url(../blocks/final.css);
+@import url(../blocks/final__text.css);
