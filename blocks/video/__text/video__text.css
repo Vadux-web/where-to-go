@@ -1,0 +1,9 @@
+.video__text {
+  position: absolute;
+  top: 17%;
+  left: 6%;
+  margin: 0;
+  font-family: RosTelecom;
+  font-size: 45px;
+  color: white;
+}
