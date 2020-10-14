@@ -50,12 +50,15 @@
 
     function controlVideo() {
       if (video[0].paused || video[0].ended) {
-        video[0].currentTime = 1;
         video[0].play();
         console.log('Playing video');
       } else {
         video[0].pause();
         console.log('Pausing video');
+      }
+
+      if (video[0].currentTime <= 1) {
+        video[0].currentTime = 1;
       }
     }
   </script>
