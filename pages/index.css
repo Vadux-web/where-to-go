@@ -1,5 +1,13 @@
-@import url(../resources/vendor/normalize.css);
-@import url(../resources/fonts/font.css);
+/* Подключаем normalize.css */
+
+@import url(../vendor/normalize.css);
+
+/* Подключаем шрифты */
+
+@import url(../fonts/font.css);
+
+/* Подключаем блок title и его компоненты */
+
 @import url(../blocks/title.css);
 
 /* Импортируем блок video и его компоненты */
@@ -9,3 +17,8 @@
 @import url(../blocks/video/__file/video__file.css);
 @import url(../blocks/video/__button-wrapper/video__button-wrapper.css);
 @import url(../blocks/video/__button/video__button.css);
+
+/* Подключаем блок final и его компоненты */
+
+@import url(../blocks/final.css);
+@import url(../blocks/final__text.css);

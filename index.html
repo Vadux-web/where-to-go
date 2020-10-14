@@ -12,56 +12,60 @@
 
   <h1 class="title">Куда я сразу, как можно будет куда-то поехать</h1>
 
-  <section class="video">
-    <p class="video__text">А пока что - сидим дома!</p>
-    <div class="video__button-wrapper">
-      <button class="video__button" type="button" onclick="changeControls(), hideText(), hideButton()"></button>
-    </div>
-    <video class="video__file" src="./resources/hadndadn.mp4" poster="resources/images/video.jpg"></video>
-  </section>
+<section class="video">
+  <p class="video__text">А пока что - сидим дома!</p>
+  <div class="video__button-wrapper">
+    <button class="video__button" type="button" onclick="changeControls(), hideText(), hideButton()"></button>
+  </div>
+  <video class="video__file" src="./resources/hadndadn.mp4" poster="resources/images/video.jpg"></video>
+</section>
 
-  <script>
-    /* Объявляем переменные */
+<script>
+  /* Объявляем переменные */
 
-    let text = document.getElementsByClassName("video__text");
-    let wrapper = document.getElementsByClassName("video__button-wrapper");
-    let button = document.getElementsByClassName("video__button");
-    let video = document.getElementsByClassName("video__file");
+  let text = document.getElementsByClassName("video__text");
+  let wrapper = document.getElementsByClassName("video__button-wrapper");
+  let button = document.getElementsByClassName("video__button");
+  let video = document.getElementsByClassName("video__file");
 
-    /* Функция для изменения схемы управления роликом */
+  /* Функция для изменения схемы управления роликом */
 
-    function changeControls() {
-      wrapper[0].setAttribute("onclick", "hideText(), hideButton(), controlVideo()");
-    }
+  function changeControls() {
+    wrapper[0].setAttribute("onclick", "hideText(), hideButton(), controlVideo()");
+  }
 
-    /* Функция для скрытия текста */
+  /* Функция для скрытия текста */
 
-    function hideText() {
-      text[0].style.display = "none";
-    }
+  function hideText() {
+    text[0].style.display = "none";
+  }
 
-    /* Функция для скрытия кнопки */
+  /* Функция для скрытия кнопки */
 
-    function hideButton() {
-      button[0].style.display = "none";
-    }
+  function hideButton() {
+    button[0].style.display = "none";
+  }
     
-    /* Функция для управления видео */
+  /* Функция для управления видео */
 
-    function controlVideo() {
-      if (video[0].paused || video[0].ended) {
-        video[0].play();
-        console.log('Playing video');
-      } else {
-        video[0].pause();
-        console.log('Pausing video');
-      }
-
-      if (video[0].currentTime <= 1) {
-        video[0].currentTime = 1;
-      }
+  function controlVideo() {
+    if (video[0].paused || video[0].ended) {
+      video[0].play();
+      console.log('Playing video');
+    } else {
+      video[0].pause();
+      console.log('Pausing video');
     }
-  </script>
+
+    if (video[0].currentTime <= 1) {
+      video[0].currentTime = 1;
+    }
+  }
+</script>
+
+<section class="final">
+  <p class="final__text">&COPY; 2020</p>
+</section>
 
 </body>
 
