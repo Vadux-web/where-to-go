@@ -8,64 +8,85 @@
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 
-<body>
+<body class="page">
 
-  <h1 class="title">Куда я сразу, как можно будет куда-то поехать</h1>
+  <header class="header">
+    <nav>
+      <ul class="header__list">
+        <li>
+          <a class="header__link" href="#" target="_blank">Мечты</a>
+        </li>
+        <li>
+          <a class="header__link" href="#" target="_blank">Ожидания</a>
+        </li>
+        <li>
+          <a class="header__link" href="#" target="_blank">Реальность</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header__petition" href="#" target="_blank">Пожаловаться</a>
+  </header>
 
-<section class="video">
-  <p class="video__text">А пока что - сидим дома!</p>
-  <div class="video__button-wrapper">
-    <button class="video__button" type="button" onclick="changeControls(), hideText(), hideButton()"></button>
-  </div>
-  <video class="video__file" src="./resources/hadndadn.mp4" poster="resources/images/video.jpg"></video>
-</section>
+  <main>
 
-<script>
-  /* Объявляем переменные */
+    <h1 class="title">Куда я сразу, как можно будет куда-то поехать</h1>
 
-  let text = document.getElementsByClassName("video__text");
-  let wrapper = document.getElementsByClassName("video__button-wrapper");
-  let button = document.getElementsByClassName("video__button");
-  let video = document.getElementsByClassName("video__file");
+  </main>
 
-  /* Функция для изменения схемы управления роликом */
+  <section class="video">
+    <p class="video__text">А пока что - сидим дома!</p>
+    <div class="video__button-wrapper">
+      <button class="video__button" type="button" onclick="changeControls(), hideText(), hideButton()"></button>
+    </div>
+    <video class="video__file" src="./resources/hadndadn.mp4" poster="resources/images/video.jpg"></video>
+  </section>
 
-  function changeControls() {
-    wrapper[0].setAttribute("onclick", "hideText(), hideButton(), controlVideo()");
-  }
+  <script>
+    /* Объявляем переменные */
 
-  /* Функция для скрытия текста */
+    let text = document.getElementsByClassName("video__text");
+    let wrapper = document.getElementsByClassName("video__button-wrapper");
+    let button = document.getElementsByClassName("video__button");
+    let video = document.getElementsByClassName("video__file");
 
-  function hideText() {
-    text[0].style.display = "none";
-  }
+    /* Функция для изменения схемы управления роликом */
 
-  /* Функция для скрытия кнопки */
-
-  function hideButton() {
-    button[0].style.display = "none";
-  }
-    
-  /* Функция для управления видео */
-
-  function controlVideo() {
-    if (video[0].paused || video[0].ended) {
-      video[0].play();
-      console.log('Playing video');
-    } else {
-      video[0].pause();
-      console.log('Pausing video');
+    function changeControls() {
+      wrapper[0].setAttribute("onclick", "hideText(), hideButton(), controlVideo()");
     }
 
-    if (video[0].currentTime <= 1) {
-      video[0].currentTime = 1;
-    }
-  }
-</script>
+    /* Функция для скрытия текста */
 
-<section class="final">
-  <p class="final__text">&COPY; 2020</p>
-</section>
+    function hideText() {
+      text[0].style.display = "none";
+    }
+
+    /* Функция для скрытия кнопки */
+
+    function hideButton() {
+      button[0].style.display = "none";
+    }
+
+    /* Функция для управления видео */
+
+    function controlVideo() {
+      if (video[0].paused || video[0].ended) {
+        video[0].play();
+        console.log('Playing video');
+      } else {
+        video[0].pause();
+        console.log('Pausing video');
+      }
+
+      if (video[0].currentTime <= 1) {
+        video[0].currentTime = 1;
+      }
+    }
+  </script>
+
+  <section class="final">
+    <p class="final__text">&COPY; 2020</p>
+  </section>
 
 </body>
 
