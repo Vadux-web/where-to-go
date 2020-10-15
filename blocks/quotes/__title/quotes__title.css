@@ -9,3 +9,9 @@
   text-transform: uppercase;
   color: #fecda7;
 }
+
+@media screen and (max-width: 768px) {
+  .quotes__title {
+    padding-top: 44px;
+  }
+}

@@ -2,3 +2,18 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1070px) {
+  .quotes__items {
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quotes__items {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 35px;
+  }
+}

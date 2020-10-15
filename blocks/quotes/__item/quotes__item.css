@@ -11,3 +11,38 @@
 .quotes__item:last-child {
   padding-right: 70px;
 }
+
+@media screen and (max-width: 1070px) {
+  .quotes__item:first-child {
+    padding-left: 0;
+  }
+
+  .quotes__item:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quotes__item {
+    padding: 60px 16px 0 0;
+  }
+
+  .quotes__item:first-child {
+    padding-left: 0;
+  }
+
+  .quotes__item:last-child {
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 562px) {
+  .quotes__item {
+    padding-top: 25px;
+  }
+}
+
+/* Пэддинг сверху — 60px, но у тайтлз 20px */
+/* Пэддинг справа — 106px */
+/* Пэддинг снизу — 0 */
+/* Пэддинг слева — 0 */

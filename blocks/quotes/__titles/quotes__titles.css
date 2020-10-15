@@ -1,3 +1,9 @@
 .quotes__titles {
   padding-left: 70px;
 }
+
+@media screen and (max-width: 768px) {
+  .quotes__titles {
+    padding-left: 35px;
+  }
+}
