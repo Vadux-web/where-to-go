@@ -5,7 +5,7 @@
   padding: 8px 0 8px 15px;
   border: none;
   border-radius: 0;
-  margin: 20px 0 29px;
+  margin: 20px 0 20px;
   font-size: 14px;
   font-weight: 500;
   resize: none;
@@ -13,4 +13,16 @@
 
 .where__text-area::placeholder {
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .where__text-area {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .where__text-area {
+    width: 273px;
+  }
 }

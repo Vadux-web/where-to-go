@@ -14,3 +14,16 @@
 .where__text-field::placeholder {
   color: black;
 }
+
+@media screen and (max-width: 768px) {
+  .where__text-field {
+    width: 290px;
+    margin: 22px 0 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .where__text-field {
+    width: 273px;
+  }
+}

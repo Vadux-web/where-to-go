@@ -1,4 +1,11 @@
 .where__image {
   min-width: 50%;
-  min-height: 622px;
+  object-fit: cover;
+  object-position: right;
+}
+
+@media screen and (max-width: 650px) {
+  .where__image {
+    max-height: 310px;
+  }
 }

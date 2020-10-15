@@ -3,3 +3,10 @@
   font-size: 35px;
   font-weight: 700;
 }
+
+@media screen and (max-width: 768px) {
+  .where__title {
+    max-width: 305px;
+    text-align: left;
+  }
+}

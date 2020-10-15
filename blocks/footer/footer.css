@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 622px;
+  background-color: #fecda7;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    min-height: 576px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    min-height: 432px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    min-height: 304px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .footer {
+    min-height: 180px;
+  }
+}

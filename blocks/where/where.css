@@ -1,3 +1,17 @@
 .where {
   display: flex;
+  max-height: 622px;
+}
+
+@media screen and (max-width: 768px) {
+  .where {
+    max-height: 373px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .where {
+    flex-direction: column-reverse;
+    max-height: 684px;
+  }
 }

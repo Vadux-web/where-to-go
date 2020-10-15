@@ -9,3 +9,25 @@
   color: white;
   transition: .3s linear;
 }
+
+@media screen and (max-width: 768px) {
+  .video__text {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video__text {
+    top: 10%;
+    left: 4%;
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .video__text {
+    top: 8%;
+    left: 3%;
+    font-size: 17px;
+  }
+}

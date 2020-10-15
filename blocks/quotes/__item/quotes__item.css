@@ -40,9 +40,8 @@
   .quotes__item {
     padding-top: 25px;
   }
-}
 
-/* Пэддинг сверху — 60px, но у тайтлз 20px */
-/* Пэддинг справа — 106px */
-/* Пэддинг снизу — 0 */
-/* Пэддинг слева — 0 */
+  .quotes__item:first-child {
+    padding-top: 60px;
+  }
+}

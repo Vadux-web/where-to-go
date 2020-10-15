@@ -2,3 +2,34 @@
   margin-left: 70px;
   text-align: right;
 }
+
+@media screen and (max-width: 980px) {
+  .where__form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .where__form {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .where__form {
+    margin: 0 auto 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .where__form {
+    padding-bottom: 39px;
+    margin: 29px auto 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .where__form {
+    margin: 29px 0 0 17px;
+  }
+}

@@ -1,6 +1,7 @@
 .where__button {
   width: 185px;
   height: 32px;
+  padding: 0;
   border: none;
   color: white;
   background-color: black;
@@ -15,4 +16,10 @@
   color: black;
   background-color: #FECDA7;
   opacity: .8;
+}
+
+@media screen and (max-width: 320px) {
+  .where__button {
+    margin-right: 15px;
+  }
 }
