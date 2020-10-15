@@ -62,22 +62,27 @@
     let button = document.getElementsByClassName("video__button");
     let video = document.getElementsByClassName("video__file");
 
+    /* Мотаем видео сразу на 1-ю секунду — чтобы была красивая обложечка */
+
+    video[0].currentTime = 1;
+
     /* Функция для изменения схемы управления роликом */
 
     function changeControls() {
+      button[0].removeAttribute("onclick");
       wrapper[0].setAttribute("onclick", "hideText(), hideButton(), controlVideo()");
     }
 
     /* Функция для скрытия текста */
 
     function hideText() {
-      text[0].style.display = "none";
+      text[0].style.opacity = "0";
     }
 
     /* Функция для скрытия кнопки */
 
     function hideButton() {
-      button[0].style.display = "none";
+      button[0].style.opacity = "0";
     }
 
     /* Функция для управления видео */
@@ -85,14 +90,8 @@
     function controlVideo() {
       if (video[0].paused || video[0].ended) {
         video[0].play();
-        console.log('Playing video');
       } else {
         video[0].pause();
-        console.log('Pausing video');
-      }
-
-      if (video[0].currentTime <= 1) {
-        video[0].currentTime = 1;
       }
     }
   </script>

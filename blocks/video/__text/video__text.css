@@ -8,4 +8,5 @@
   font-family: RosTelecom;
   font-size: 35px;
   color: white;
+  transition: .3s linear;
 }
