@@ -1,0 +1,13 @@
+.quotes__item {
+  width: 243px;
+  min-height: 100px;
+  padding: 115px 0 143px;
+}
+
+.quotes__item:first-child {
+  padding-left: 70px;
+}
+
+.quotes__item:last-child {
+  padding-right: 70px;
+}

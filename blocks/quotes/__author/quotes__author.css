@@ -1,0 +1,8 @@
+.quotes__author {
+  margin: 0;
+  padding-bottom: 23px;
+  font-family: FiraMono, monospace;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
