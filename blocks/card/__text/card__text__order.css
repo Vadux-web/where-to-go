@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+  .card__text__order {
+    order: 1;
+  }
+}

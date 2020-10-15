@@ -2,6 +2,18 @@
   display: flex;
   flex-direction: column;
   margin: 61px 70px 85px 71px;
-  border: 1px solid red;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1120px) {
+  .card__text {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card__text {
+    margin: 22px 16px;
+  }
 }

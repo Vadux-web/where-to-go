@@ -5,3 +5,9 @@
   max-width: 428px;
   margin: 22px 0 0;
 }
+
+@media screen and (max-width: 767px) {
+  .card__paragraph {
+    max-width: 611px;
+  }
+}

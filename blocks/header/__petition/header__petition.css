@@ -5,3 +5,13 @@
   color: #000;
   margin: 0;
 }
+
+@media screen and (max-width: 530px) {
+  .header__petition {
+    line-height: 1;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 24px;
+    color: lightgray;
+  }
+}
