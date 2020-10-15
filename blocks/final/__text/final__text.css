@@ -1,6 +1,7 @@
 .final__text {
   margin: 0;
-  font-family: RosTelecom;
   font-weight: 400;
   font-size: 35px;
+  pointer-events: none;
+  user-select: none;
 }

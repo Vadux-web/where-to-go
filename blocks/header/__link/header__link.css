@@ -4,6 +4,10 @@
   color: #000;
 }
 
+.header__link:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 530px) {
   .header__link {
     font-size: 24px;

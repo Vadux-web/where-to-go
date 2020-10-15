@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.header__petition:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 530px) {
   .header__petition {
     line-height: 1;
