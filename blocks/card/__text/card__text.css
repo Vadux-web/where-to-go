@@ -1,0 +1,7 @@
+.card__text {
+  display: flex;
+  flex-direction: column;
+  margin: 61px 70px 85px 71px;
+  border: 1px solid red;
+  justify-content: space-between;
+}
