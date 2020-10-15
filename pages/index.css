@@ -17,7 +17,18 @@
 @import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/header/__petition/header__petition.css);
 
-/* Импортируем блок video и его компоненты */
+/* Подключаем блок where и его компоненты */
+
+@import url(../blocks/where/where.css);
+@import url(../blocks/where/__main/where__main.css);
+@import url(../blocks/where/__form/where__form.css);
+@import url(../blocks/where/__title/where__title.css);
+@import url(../blocks/where/__text-field/where__text-field.css);
+@import url(../blocks/where/__text-area/where__text-area.css);
+@import url(../blocks/where/__button/where__button.css);
+@import url(../blocks/where/__image/where__image.css);
+
+/* Подключаем блок video и его компоненты */
 
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__text/video__text.css);
