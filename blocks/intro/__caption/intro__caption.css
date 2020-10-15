@@ -4,5 +4,10 @@
   font-size: 12px;
   letter-spacing: 0.05em;
   color: #fecda7;
-  margin: 146px 0 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .intro__caption {
+    color: #000;
+  }
 }
