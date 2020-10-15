@@ -1,0 +1,8 @@
+.where__main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 50%;
+  min-height: 622px;
+  background-color: #F2F2F2;
+}

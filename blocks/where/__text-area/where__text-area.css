@@ -1,0 +1,16 @@
+.where__text-area {
+  display: block;
+  width: 341px;
+  height: 84px;
+  padding: 8px 0 8px 15px;
+  border: none;
+  border-radius: 0;
+  margin: 20px 0 29px;
+  font-size: 14px;
+  font-weight: 500;
+  resize: none;
+}
+
+.where__text-area::placeholder {
+  color: black;
+}

@@ -70,6 +70,18 @@
       </article>
     </section>
 
+    <section class="where">
+      <div class="where__main">
+        <form class="where__form">
+          <h2 class="where__title">Так куда же я поеду?</h2>
+          <input class="where__text-field" type="text" placeholder="Я поеду ..." required>
+          <textarea class="where__text-area" placeholder="Потому что я ..." required></textarea>
+          <button class="where__button">Поехали уже куда-нибудь!</button>
+        </form>
+      </div>
+      <img class="where__image" src="./resources/images/airport-schedule.jpg" alt="Электронное табло с расписанием рейсов в аэропорту">
+    </section>
+
     <section class="video">
       <p class="video__text">А пока что - сидим дома!</p>
       <div class="video__button-wrapper">
@@ -90,22 +102,27 @@
     let button = document.getElementsByClassName("video__button");
     let video = document.getElementsByClassName("video__file");
 
+    /* Мотаем видео сразу на 1-ю секунду — чтобы была красивая обложечка */
+
+    video[0].currentTime = 1;
+
     /* Функция для изменения схемы управления роликом */
 
     function changeControls() {
+      button[0].removeAttribute("onclick");
       wrapper[0].setAttribute("onclick", "hideText(), hideButton(), controlVideo()");
     }
 
     /* Функция для скрытия текста */
 
     function hideText() {
-      text[0].style.display = "none";
+      text[0].style.opacity = "0";
     }
 
     /* Функция для скрытия кнопки */
 
     function hideButton() {
-      button[0].style.display = "none";
+      button[0].style.opacity = "0";
     }
 
     /* Функция для управления видео */
@@ -113,14 +130,8 @@
     function controlVideo() {
       if (video[0].paused || video[0].ended) {
         video[0].play();
-        console.log('Playing video');
       } else {
         video[0].pause();
-        console.log('Pausing video');
-      }
-
-      if (video[0].currentTime <= 1) {
-        video[0].currentTime = 1;
       }
     }
   </script>
