@@ -13,6 +13,7 @@
 /* Подключаем блок header и его компоненты */
 
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/__menu-hamburger/header__menu-hamburger.css);
 @import url(../blocks/header/__menu-button/header__menu-button.css);
 @import url(../blocks/header/__list/header__list.css);
 @import url(../blocks/header/__link/header__link.css);
