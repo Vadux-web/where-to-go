@@ -12,6 +12,7 @@
 
 @media screen and (max-width: 530px) {
   .header__petition {
+    display: none;
     line-height: 1;
     text-align: left;
     margin-top: 20px;

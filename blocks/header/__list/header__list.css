@@ -8,6 +8,8 @@
 
 @media screen and (max-width: 530px) {
   .header__list {
+    display: none;
     flex-direction: column;
+    margin-top: 20px;
   }
 }

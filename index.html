@@ -15,6 +15,7 @@
 <body class="page">
 
   <header class="header">
+    <button class="header__menu-button" onclick="controlMenu()">Меню</button>
     <nav>
       <ul class="header__list">
         <li>
@@ -133,6 +134,29 @@
     </footer>
   </main>
   <script>
+    /* Скрипт для управления меню в хэдере на низких разрешениях */
+
+    /* Объявляем переменные */
+
+    let links = document.getElementsByClassName("header__list");
+    let petition = document.getElementsByClassName("header__petition");
+
+    /* Функция для управления меню */
+
+    function controlMenu() {
+      if (links[0].style.display == "flex") {
+        links[0].style.display = "none";
+        petition[0].style.display = "none";
+      } else {
+        links[0].style.display = "flex";
+        petition[0].style.display = "flex";
+      }
+    }
+
+  </script>
+  <script>
+    /* Скрипт для управления видео */
+
     /* Объявляем переменные */
 
     let text = document.getElementsByClassName("video__text");
