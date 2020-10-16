@@ -149,10 +149,22 @@
         petition[0].style.display = "none";
       } else {
         links[0].style.display = "flex";
-        petition[0].style.display = "flex";
+        petition[0].style.display = "block";
       }
     }
 
+    /* Функция для возврата ссылок из display: none; при ресайзе */
+    
+    function checkResize() {
+      let width = screen.width;
+
+      if (width > 530 && links[0].style.display == "none") {
+        links[0].style.display = "flex";
+        petition[0].style.display = "block";
+      }
+    }
+
+    window.onresize = checkResize;
   </script>
   <script>
     /* Скрипт для управления видео */
