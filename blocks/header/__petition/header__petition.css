@@ -1,22 +1,9 @@
 .header__petition {
-  flex: 1;
-  text-align: right;
-  text-decoration: none;
-  color: #000;
-  margin: 0;
-}
-
-.header__petition:hover {
-  text-decoration: underline;
+  margin: 0 0 0 auto;
 }
 
 @media screen and (max-width: 530px) {
   .header__petition {
-    display: none;
-    line-height: 1;
-    text-align: left;
-    margin-top: 20px;
-    font-size: 24px;
-    color: lightgray;
+    margin-left: 0;
   }
 }
